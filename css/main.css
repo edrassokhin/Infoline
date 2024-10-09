@@ -1,0 +1,11 @@
+.btn {
+    min-width: 100px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.btn.active {
+    background-color: rgb(50, 110, 163);
+    color: white;
+}
