@@ -1,11 +1,63 @@
-.btn {
-    min-width: 100px;
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 5px;
+/*Базовые стили*/
+* {
+    box-sizing: border-box;
 }
 
-.btn.active {
-    background-color: rgb(50, 110, 163);
-    color: white;
+html,
+body {
+    height: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul>li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*Наследовать цвет от родителя*/
+/*Убрать нижнее подчеркивание*/
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*Цвет фона прозрачный*/
+/*Нет границ*/
+button {
+    background-color: transparent;
+    border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+/*Общие стили*/
+.container {
+    max-width: 1260px;
+    margin-inline: auto;
+    padding: 0px 40px;
+}
+
+.header {
+    height: 100%;
+    background-color: #2C3B45;
+    padding-top: 30px;
 }
