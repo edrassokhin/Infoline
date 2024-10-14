@@ -47,6 +47,7 @@ h6 {
 .wrapper {
     min-height: 100%;
     overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /*Общие стили*/
@@ -60,4 +61,26 @@ h6 {
     height: 100%;
     background-color: #2C3B45;
     padding-top: 30px;
+}
+
+.logo {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo:before {
+    display: inline-block;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/icons/Logo.png);
+    background-size: contain;
+}
+
+.nav {
+    background-color: #404F59;
+    border-radius: 0px 0px 10px 10px;
 }
