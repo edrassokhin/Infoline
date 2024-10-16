@@ -61,6 +61,7 @@ h6 {
     height: 100%;
     background-color: #2C3B45;
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .logo {
@@ -69,6 +70,10 @@ h6 {
     display: flex;
     align-items: center;
     gap: 5px;
+    width: 144px;
+    height: 30px;
+    position: absolute;
+    top: 15px;
 }
 
 .logo:before {
@@ -83,4 +88,96 @@ h6 {
 .nav {
     background-color: #404F59;
     border-radius: 0px 0px 10px 10px;
+    width: 409px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    right: 40%;
+
+
+}
+
+.nav__list {
+    display: flex;
+    justify-content: center;
+}
+
+.nav__item {
+    color: #FFFFFF;
+    margin: 16px 15px;
+}
+
+.phone__link {
+    color: #ffffff5c;
+    position: absolute;
+    top: 20px;
+    right: 20%;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+}
+
+.phone__link:before {
+    display: inline-block;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/icons/phone.png);
+    background-size: contain;
+}
+
+span {
+    color: #FFFFFF;
+}
+
+.hero {
+    height: 100%;
+    background-color: #2C3B45;
+    padding-top: 30px;
+    padding-bottom: 400px;
+}
+
+.address {
+    text-transform: uppercase;
+    color: #1E92E7;
+}
+
+.address:before {
+    display: inline-block;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/icons/clarity_map-marker-solid.svg);
+    background-size: contain;
+}
+
+.title {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 50px;
+}
+
+.hero__button {
+    text-transform: uppercase;
+    background-color: #1E92E7;
+    border-radius: 5px;
+    color: #FFFFFF;
+    width: 230px;
+    height: 45px;
+}
+
+.hero__content {
+    position: relative;
+    top: 100px;
+    width: 500px;
+}
+
+.hero__image {
+    position: absolute;
+    left: 50%;
+    top: 120px;
 }
