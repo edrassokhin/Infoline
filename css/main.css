@@ -3,6 +3,14 @@
     box-sizing: border-box;
 }
 
+:root {
+    --font-family: "Montserrat", sans-serif;
+    --second-family: "Open Sans", sans-serif;
+    --third-family: "Roboto", sans-serif;
+    --temnyy: #2c3b45;
+    --akcent: #1e92e7;
+}
+
 html,
 body {
     height: 100%;
@@ -47,7 +55,7 @@ h6 {
 .wrapper {
     min-height: 100%;
     overflow: hidden;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-family)
 }
 
 /*Общие стили*/
@@ -57,23 +65,44 @@ h6 {
     padding: 0px 40px;
 }
 
+.btn {
+    border-radius: 5px;
+    background-color: var(--akcent);
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: var(--second-family);
+    padding: 14px 35px;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color: #1874b6;
+}
+
+/* Конец общих стилей */
+
 .header {
-    height: 100%;
-    background-color: #2C3B45;
+    width: 100%;
     padding-top: 30px;
-    padding-bottom: 30px;
+    position: absolute;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .logo {
     color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
     text-transform: uppercase;
     display: flex;
     align-items: center;
     gap: 5px;
-    width: 144px;
-    height: 30px;
-    position: absolute;
-    top: 15px;
 }
 
 .logo:before {
@@ -87,63 +116,116 @@ h6 {
 
 .nav {
     background-color: #404F59;
+    color: #FFFFFF;
     border-radius: 0px 0px 10px 10px;
-    width: 409px;
-    height: 52px;
     display: flex;
     justify-content: center;
-    position: absolute;
-    top: 0px;
-    right: 40%;
-
-
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    padding: 20px 40px;
+    margin-top: -30px;
 }
 
 .nav__list {
     display: flex;
+    gap: 30px;
     justify-content: center;
+}
+
+.nav__link {
+    font-weight: 400;
+    font-size: 16px;
 }
 
 .nav__item {
     color: #FFFFFF;
-    margin: 16px 15px;
 }
 
 .phone__link {
-    color: #ffffff5c;
-    position: absolute;
-    top: 20px;
-    right: 20%;
+    color: rgba(255, 255, 255, 0.4);
     text-transform: uppercase;
     display: flex;
     align-items: center;
-    gap: 7px;
-
+    column-gap: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.2;
 }
 
 .phone__link:before {
     display: inline-block;
     content: "";
-    width: 15px;
-    height: 15px;
+    width: 24px;
+    height: 24px;
     background-image: url(../img/icons/phone.png);
     background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-span {
+.phone__link span {
     color: #FFFFFF;
 }
 
 .hero {
+    background-color: var(--temnyy);
+    border-bottom: 50px solid var(--akcent);
+    background-image: url(../img/hero/decor.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: var(--font-family);
+    padding-top: 134px;
+}
+
+.hero__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__content {
+    flex: 1;
+    padding-top: 92px;
+}
+
+.hero__img {
+    max-height: 95%;
+    position: relative;
+}
+
+.hero__img-wrap {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 5px 0px 0px 0px;
+    position: relative;
+}
+
+.hero__img-wrap::before {
+    content: "";
+    display: block;
+    background-image: url(../img/hero/sky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100%;
-    background-color: #2C3B45;
-    padding-top: 30px;
-    padding-bottom: 400px;
+    width: 100vw;
+    border-radius: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .address {
     text-transform: uppercase;
-    color: #1E92E7;
+    color: var(--akcent);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.2;
+    font-style: normal;
+    margin-bottom: 45px;
 }
 
 .address:before {
@@ -158,26 +240,12 @@ span {
 .title {
     text-transform: uppercase;
     color: #FFFFFF;
-    font-size: 50px;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 1.2;
+    margin-bottom: 47px;
 }
 
-.hero__button {
-    text-transform: uppercase;
-    background-color: #1E92E7;
-    border-radius: 5px;
-    color: #FFFFFF;
-    width: 230px;
-    height: 45px;
-}
+.hero__buttons {}
 
-.hero__content {
-    position: relative;
-    top: 100px;
-    width: 500px;
-}
-
-.hero__image {
-    position: absolute;
-    left: 50%;
-    top: 120px;
-}
+.hero__button {}
