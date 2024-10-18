@@ -81,6 +81,23 @@ h6 {
     background-color: #1874b6;
 }
 
+.btn--transparent {
+    background-color: transparent;
+    border: 1px solid var(--akcent);
+    color: #000;
+}
+
+.btn--transparent:hover {
+    color: #FFFFFF;
+}
+
+.section-title {
+    font-weight: 600;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #000;
+}
+
 /* Конец общих стилей */
 
 .header {
@@ -198,6 +215,7 @@ h6 {
 .hero__img {
     max-height: 95%;
     position: relative;
+    z-index: 15;
 }
 
 .hero__img-wrap {
@@ -209,6 +227,7 @@ h6 {
     position: relative;
 }
 
+/* Блок с облаками */
 .hero__img-wrap::before {
     content: "";
     display: block;
@@ -221,6 +240,21 @@ h6 {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 10;
+}
+
+/* Фон за облаками */
+.hero__img-wrap::after {
+    content: "";
+    display: block;
+    background-color: #404F59;
+    position: absolute;
+    top: -15px;
+    left: 30px;
+    width: 100vw;
+    height: 100%;
+    border-radius: inherit;
+    z-index: 5;
 }
 
 .address {
@@ -231,15 +265,20 @@ h6 {
     line-height: 1.2;
     font-style: normal;
     margin-bottom: 45px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .address:before {
     display: inline-block;
     content: "";
-    width: 15px;
-    height: 15px;
+    width: 25px;
+    height: 25px;
     background-image: url(../img/icons/clarity_map-marker-solid.svg);
     background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .title {
@@ -251,6 +290,78 @@ h6 {
     margin-bottom: 47px;
 }
 
-.hero__buttons {}
+.rent {
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
 
-.hero__button {}
+.rent__container {}
+
+.rent-title {
+    margin-bottom: 16px;
+}
+
+.rent__btns {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+
+
+
+.rent__btn {}
+
+.rent__select-wrap {}
+
+.rent__select {}
+
+.offers {}
+
+.offers__container {
+    position: relative;
+}
+
+.control {}
+
+.offers__control {
+    position: absolute;
+    top: 207px;
+}
+
+.offers__control--prev {}
+
+.offers__control--next {}
+
+.offers__list {
+    display: flex;
+    gap: 20px;
+}
+
+.offer {}
+
+.offer__content {}
+
+.offer__img {}
+
+.offer-info {}
+
+.offer__info-list {}
+
+.offer__info-item {}
+
+.offer__info-desc {}
+
+.offer__info-value {}
+
+.offer__info-value--true {}
+
+.offer__btn {}
+
+.slider-indicators {}
+
+.offer__indicators {}
+
+.slider-indicator {}
+
+.active {}
