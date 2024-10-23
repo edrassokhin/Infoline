@@ -1,0 +1,120 @@
+.header {
+    width: 100%;
+    padding-top: 30px;
+    position: absolute;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo:before {
+    display: inline-block;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/icons/Logo.png);
+    background-size: contain;
+}
+
+.nav {
+    background-color: #404F59;
+    color: #FFFFFF;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    justify-content: center;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    padding: 20px 40px;
+    margin-top: -30px;
+}
+
+.nav__list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.nav__link {
+    font-weight: 400;
+    font-size: 16px;
+    transition: all 0, 3s;
+}
+
+.nav__link:hover {
+    text-decoration-line: underline;
+}
+
+.nav__item {
+    color: #FFFFFF;
+}
+
+.phone__link {
+    color: rgba(255, 255, 255, 0.4);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.phone__link:before {
+    display: inline-block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/icons/phone.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.phone__link span {
+    color: #FFFFFF;
+}
+
+.burger {
+    width: 26px;
+    height: 20px;
+    z-index: 20;
+    position: relative;
+    display: none;
+}
+
+.burger__el {
+    display: block;
+    background-color: #FFFFFF;
+    border-radius: 1px;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+}
+
+.burger__el:nth-child(1) {
+    top: 0;
+}
+
+.burger__el:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.burger__el:nth-child(3) {
+    bottom: 0;
+}

@@ -1,0 +1,99 @@
+.hero {
+    background-color: var(--temnyy);
+    border-bottom: 50px solid var(--akcent);
+    background-image: url(../img/hero/decor.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: var(--font-family);
+    padding-top: 134px;
+}
+
+.hero__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__content {
+    flex: 1;
+    padding-top: clamp(46px, 7.8vw, 92px);
+    padding-bottom: clamp(100px, 16.9vw, 199px);
+}
+
+.hero__img {
+    max-height: 95%;
+    height: auto;
+    position: relative;
+    z-index: 15;
+    flex: 0 0 auto;
+}
+
+.hero__img-wrap {
+    flex: 0 1 clamp(240px, 49vw, 580px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 5px 0px 0px 0px;
+    position: relative;
+}
+
+.hero__img-wrap::before {
+    content: "";
+    display: block;
+    background-image: url(../img/hero/sky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100vw;
+    border-radius: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.hero__img-wrap::after {
+    content: "";
+    display: block;
+    background-color: #404F59;
+    position: absolute;
+    top: -15px;
+    left: 30px;
+    width: 100vw;
+    height: 100%;
+    border-radius: inherit;
+    z-index: 5;
+}
+
+.address {
+    text-transform: uppercase;
+    color: var(--akcent);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.2;
+    font-style: normal;
+    margin-bottom: 45px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.address:before {
+    display: inline-block;
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/icons/clarity_map-marker-solid.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.title {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: clamp(31px, 4.7vw, 56px);
+    line-height: 1.2;
+    margin-bottom: 47px;
+}
